@@ -24,8 +24,9 @@
   .lede { color: var(--muted); margin: 0 0 40px; }
   .app {
     display: block; border: 1px solid var(--border); border-radius: 14px;
-    padding: 22px; text-decoration: none; color: inherit;
+    padding: 22px; margin-bottom: 16px; text-decoration: none; color: inherit;
   }
+  .app:last-of-type { margin-bottom: 0; }
   .app:hover { border-color: var(--accent); }
   .app h2 { font-size: 19px; margin: 0 0 6px; }
   .app p { margin: 0; color: var(--muted); font-size: 15px; }
@@ -45,10 +46,18 @@
     <span class="go">Visit the website →</span>
   </a>
 
+  <a class="app" href="https://sehapps.github.io/count-them-all/">
+    <h2>Count Them All <span style="color:var(--muted);font-weight:400">· Çoklu Sayaç</span></h2>
+    <p>A multi counter. Create as many counters as you want, colour-code them, and count with a tap or the volume keys.</p>
+    <span class="go">Visit the website →</span>
+  </a>
+
   <footer>
     Contact: <a href="mailto:sehappdev@gmail.com">sehappdev@gmail.com</a><br>
-    <a href="https://sehapps.github.io/dd-budget/privacy-en.html">Privacy Policy</a> ·
-    <a href="https://sehapps.github.io/dd-budget/terms-en.html">Terms of Use</a>
+    Privacy policies:
+    <a href="https://sehapps.github.io/dd-budget/privacy-en.html">DD Budget</a> ·
+    <a href="https://sehapps.github.io/count-them-all/privacy-en.html">Count Them All</a><br>
+    <a href="https://sehapps.github.io/dd-budget/terms-en.html">DD Budget — Terms of Use</a>
     <p style="margin-top:20px">© 2026 Sehapps</p>
   </footer>
 </main>

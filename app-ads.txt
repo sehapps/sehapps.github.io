@@ -1,0 +1,6 @@
+# app-ads.txt — Sehapps
+# Spec: https://iabtechlab.com/ads-txt/
+# Bu dosya, uygulamalarımızdaki reklam envanterini satmaya yetkili satıcıları bildirir.
+# Yetkisiz satıcı (spoofing) filtrelemesi için gereklidir — Google AdMob bu adresi tarar.
+
+google.com, pub-9428080639632703, DIRECT, f08c47fec0942fa0

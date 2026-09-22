@@ -1,0 +1,6 @@
+# Tarayıcılar robots.txt'yi yalnızca alan adının KÖKÜNDE arar.
+# /dd-budget/robots.txt okunmaz — sitemap bildirimi bu yüzden burada.
+User-agent: *
+Allow: /
+
+Sitemap: https://sehapps.github.io/dd-budget/sitemap.xml

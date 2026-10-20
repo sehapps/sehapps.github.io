@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time2Timelapse — Gizlilik Politikası</title>
+<meta name="description" content="Time2Timelapse kayıtlarınızı, isteğe bağlı Google Drive yedeğini, çökme raporlarını ve kullanım istatistiklerini nasıl işler. Geliştirici sunucusu yok, reklam yok.">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="canonical" href="https://sehapps.github.io/time2timelapse/privacy-tr.html">
+<link rel="alternate" hreflang="en" href="https://sehapps.github.io/time2timelapse/privacy-en.html">
+<link rel="alternate" hreflang="tr" href="https://sehapps.github.io/time2timelapse/privacy-tr.html">
+</head>
+<body>
+<main class="legal">
+  <a class="back" href="tr/">← Time2Timelapse</a>
+  <div style="text-align:right;font-size:14px"><a href="privacy-en.html">English</a></div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">
+    Uygulama: Time2Timelapse (Android)<br>
+    Yayıncı: Sehapps<br>
+    İletişim: <a href="mailto:sehappdev@gmail.com">sehappdev@gmail.com</a><br>
+    Son güncelleme: 20 Ekim 2026
+  </p>
+
+  <div class="summary">
+    <strong>Kısaca:</strong> Time2Timelapse'in kendi sunucusu ya da hesap sistemi yoktur; kayıtlarınız
+    geliştiriciye ulaşmaz. Kareler telefonunuzda çekilir ve videoya orada dönüştürülür.
+    İsteğe bağlı Google Drive yedeğini açarsanız kayıtlarınız <em>kendi</em> Google Drive'ınızda Time2Timelapse'e
+    ayrılmış, yalnızca bu uygulamanın açabildiği alana kopyalanır. Uzun kayıtların güvenilir kalması için
+    uygulama teknik çökme raporları (Firebase Crashlytics) ve, yalnızca siz izin verirseniz, anonim kullanım istatistikleri
+    (Google Analytics for Firebase) gönderir; fotoğraf, video, dosya adı, konum ya da hesap bilgisi asla gönderilmez.
+    Her birini <em>Ayarlar → Gizlilik</em> bölümünden değiştirebilirsiniz. Reklam ve reklam kimliği yoktur.
+  </div>
+
+  <h2>1. Uygulamanın işlediği veriler</h2>
+  <table>
+    <thead>
+      <tr><th>Veri</th><th>Nerede tutulur</th><th>Neden</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Kamera kareleri ve bitmiş videolar</td>
+        <td>Cihazınızda: kayıt sürerken uygulamanın özel alanında, sonra galerinizde
+          (<code>Movies/Time2Timelapse</code>)</td>
+        <td>Hızlandırılmış videoyu oluşturmak</td>
+      </tr>
+      <tr>
+        <td>Kayıt ayarları, zamanlamalar ve oturum kayıtları (başlangıç saati, aralık, kare sayıları)</td>
+        <td>Cihazınızda, uygulamanın özel alanında</td>
+        <td>Kayıtları sürdürmek ve tamamlamak, zamanlamalar</td>
+      </tr>
+      <tr>
+        <td>Google hesabınızın e-posta adresi <em>(yalnızca yedeği açarsanız)</em></td>
+        <td>Cihazınızda</td>
+        <td>Yedeğin hangi hesaba bağlı olduğunu göstermek</td>
+      </tr>
+      <tr>
+        <td>Video parçaları, küçük resimler ve kayıt kataloğu (parça saatleri, kare sayıları)
+          <em>(yalnızca yedeği açarsanız)</em></td>
+        <td>Google Drive'ınız, bu uygulamaya ayrılmış alan (<code>appDataFolder</code>)</td>
+        <td>Yedekleme; diğer cihazlarınızdan izleme ve dışa aktarma</td>
+      </tr>
+      <tr>
+        <td>Cihaz durumu: seçtiğiniz cihaz adı, telefon modeli, uygulama sürümü, pil düzeyi ve şarj durumu, boş alan,
+          sıcaklık düzeyi, uyarılar, kaydın ilerleyişi <em>(yalnızca yedeği açarsanız)</em></td>
+        <td>Google Drive'ınız, bu uygulamaya ayrılmış alan</td>
+        <td>Kameranın durumunu diğer cihazlarınızda göstermek</td>
+      </tr>
+      <tr>
+        <td>Etkinlik kayıtları: dışa aktarma, çöpe atma, geri yükleme ve silme işlemleri ile cihazlarınız arasında
+          gönderilen istekler <em>(yalnızca yedeği açarsanız)</em></td>
+        <td>Google Drive'ınız, bu uygulamaya ayrılmış alan</td>
+        <td>Tüm cihazları eşit tutmak ve olanları göstermek</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Toplamadıklarımız:</strong> adınız, telefon numaranız, konumunuz, kişileriniz, mikrofon sesi ve reklam
+  kimliği. Uygulama ses kaydetmez. Çökme raporları ve kullanım istatistikleri 3. bölümde anlatılır.</p>
+
+  <h2>2. İsteğe bağlı Google Drive yedeği</h2>
+  <ul>
+    <li>Yedek, siz <em>Ayarlar → Yedek</em> bölümünden açıp bir Google hesabı seçene dek kapalıdır.</li>
+    <li>Uygulama yalnızca iki izin ister:
+      <code>drive.appdata</code> — Drive'ınızda bu uygulamaya ayrılmış, yalnızca bu uygulamanın okuyup
+      yazabildiği ve Drive dosya listenizde görünmeyen alan (uygulama Drive'ınızdaki diğer dosyaları göremez) ve
+      <code>email</code> — hangi hesabın bağlı olduğunu bilmeniz için uygulamada gösterilen adresiniz.</li>
+    <li>Oturum açma, cihazınızdaki Google Play hizmetleri üzerinden yapılır. Dosyalar cihazınızla Google arasında
+      şifreli bağlantıyla (HTTPS) doğrudan aktarılır; bize ait bir sunucudan geçmez.</li>
+    <li>Yüklemeler varsayılan olarak Wi-Fi ile yapılır. Mobil veri yalnızca siz izin verirseniz kullanılır.</li>
+    <li>Time2Timelapse'i aynı Google hesabıyla açıp yedeği açtığınız her cihaz bu kayıtları görebilir, dışa
+      aktarabilir, çöpe atabilir ya da silebilir; gizlediğiniz bir cihazın kayıtları hariç. Gizlenen cihaz ve
+      kayıtları diğer cihazlarınızda uygulamada hiç gösterilmez, o cihazların ekran kilidi de bunları açamaz;
+      yalnızca gizlenen cihazın kendisi yeniden görünür yapabilir. Gizleme bir şifreleme değildir: yedek Google
+      hesabınızda kalır.</li>
+    <li>Yedekler Google Drive depolama kotanızı kullanır.</li>
+  </ul>
+
+  <h2>3. Çökme raporları ve kullanım istatistikleri</h2>
+  <p>Uygulama, Google'ın Firebase hizmetlerine iki tür teknik veri gönderebilir. Her birinin <em>Ayarlar → Gizlilik</em>
+  bölümünde kendi anahtarı vardır ve ikisi de istediğiniz an, ayrı ayrı kapatılabilir. Hiçbiri fotoğraflarınızı,
+  videolarınızı, dosya adlarını, konumunuzu ya da Google hesabınızı içermez; uygulamada reklam yoktur ve reklam
+  kimliği kullanılmaz.</p>
+  <p><strong>Çökme raporları.</strong> "Çökme raporlarını gönder" açıksa (Ayarlar → Gizlilik, varsayılan açık),
+  uygulama çöktüğünde, donduğunda ya da bir çekim hatayla bittiğinde Firebase Crashlytics'e teknik bir rapor gönderir:
+  hatanın yeri, telefon modeli, Android ve uygulama sürümü, uygulamadaki son ekranlar ve adımlar. Bunu, uzun ve
+  gözetimsiz çekimlerin güvenilir kalması için meşru menfaatimize dayanarak kullanırız. Raporlar asla fotoğraf, video,
+  dosya adı, konum ya da hesap bilginizi içermez. İstediğiniz an kapatabilirsiniz; kapatınca gönderilmemiş raporlar
+  silinir.</p>
+  <p><strong>Kullanım istatistikleri.</strong> Siz izin verene dek kapalıdır: ilk video kaydedildikten sonra uygulama
+  bunları paylaşmak isteyip istemediğinizi bir kez sorar; "İzin verme"yi seçerseniz ya da soruyu kapatırsanız hiçbir şey
+  gönderilmez. Dayanağımız açık rızanızdır ve onu istediğiniz an geri alabilirsiniz. "Kullanım istatistiklerini paylaş"
+  açıksa (Ayarlar → Gizlilik), uygulama
+  Google Analytics for Firebase'e anonim kullanım verisi gönderir: hangi ekranların ve özelliklerin kullanıldığı, çekim
+  ayarları (ör. çözünürlük ve aralık) ve çekimlerin nasıl bittiği (tamamlandı, durduruldu, hata türü, kabaca süre).
+  Veriler adınıza, hesabınıza ya da reklam kimliğinize değil, rastgele bir uygulama kimliğine bağlıdır. Fotoğraf,
+  video, dosya adı, konum ve Google hesabınız asla gönderilmez. Google bu verileri bizim adımıza işler; 14 ay saklanır.
+  İstediğiniz an kapatabilirsiniz; kapatınca telefondaki analitik kimliği de silinir.</p>
+  <p>Bu, Google Drive yedeğinden ayrıdır: kayıtlarınız ve yedek verileriniz Firebase'e hiç gitmez.</p>
+
+  <h2>4. Google API Hizmetleri Kullanıcı Verileri Politikası</h2>
+  <p>Time2Timelapse'in Google API'lerinden aldığı bilgileri kullanması ve başka bir uygulamaya aktarması,
+  Sınırlı Kullanım (Limited Use) gereklilikleri de dahil olmak üzere
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na
+  uygundur. Özellikle:</p>
+  <ul>
+    <li>Google Drive'ınızdaki veriler yalnızca uygulamada gördüğünüz yedekleme ve izleme özelliklerini sağlamak için kullanılır.</li>
+    <li>Geliştiriciye ya da üçüncü kişilere gönderilmez, reklam için kullanılmaz ve satılmaz.</li>
+    <li>Hiçbir kişi bu verileri okumaz; veriler cihazlarınızla Google hesabınız arasında kalır.</li>
+  </ul>
+
+  <h2>5. Cihaz izinleri</h2>
+  <table>
+    <thead><tr><th>İzin</th><th>Kullanım amacı</th></tr></thead>
+    <tbody>
+      <tr><td>Kamera</td><td>Kare çekmek</td></tr>
+      <tr><td>Bildirimler</td><td>Kayıt bildirimi ve uyarılar (pil, depolama, sıcaklık, yedek)</td></tr>
+      <tr><td>Ön plan hizmeti, uyanık tutma</td><td>Uzun kaydı ekran kapalıyken sürdürmek</td></tr>
+      <tr><td>Alarmlar ve hatırlatıcılar, açılışta çalışma</td><td>Zamanlanmış kayıtları, yeniden başlatmadan sonra da vaktinde başlatmak</td></tr>
+      <tr><td>İnternet, ağ durumu</td><td>İsteğe bağlı yedek (yüklemeden önce Wi-Fi denetimi) ve açıksa çökme raporları ile kullanım istatistiklerinin gönderilmesi</td></tr>
+    </tbody>
+  </table>
+
+  <h2>6. Verilerin saklanması ve silinmesi</h2>
+  <ul>
+    <li><strong>Cihazınızda:</strong> bitmiş videolar galerinizdedir; diğer videolar gibi silebilirsiniz. Uygulamanın
+      çalışma dosyaları video kaydedilince silinir (yedek açıksa, tüm parçalar yüklendikten sonra). Uygulamayı
+      kaldırmak tüm özel verilerini siler.</li>
+    <li><strong>Drive'ınızda:</strong> uygulamanın <em>Yedekler</em> ekranından kayıtları çöpe atabilirsiniz; çöptekiler
+      30 gün sonra ya da çöpü boşalttığınızda kalıcı olarak silinir.</li>
+    <li><strong>Hepsini birden:</strong> web'de <a href="https://drive.google.com/drive/settings" target="_blank" rel="noopener">Google Drive ayarları</a>
+      → <em>Uygulamaları yönet</em> → Time2Timelapse → <em>Seçenekler</em> → <em>Gizli uygulama verilerini sil</em>.</li>
+    <li><strong>Erişimi kaldırma:</strong> <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>
+      → Time2Timelapse → <em>Erişimi kaldır</em>. Uygulamada <em>Ayarlar → Yedek → Bağlantıyı kes</em> o cihazda yedeği durdurur.</li>
+    <li><strong>Çökme raporları ve kullanım istatistikleri:</strong> <em>Ayarlar → Gizlilik</em> bölümünden kapatın. Çökme
+      raporlarını kapatmak gönderilmemiş raporları, kullanım istatistiklerini kapatmak telefondaki analitik kimliğini siler.
+      Kullanım istatistikleri 14 ay saklanır. Diğer talepleriniz için aşağıdaki adresten bize yazın.</li>
+  </ul>
+
+  <h2>7. Çocuklar</h2>
+  <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir; bilerek çocuklardan veri toplamayız.</p>
+
+  <h2>8. Kayıt yaparken sorumluluğunuz</h2>
+  <p>Hızlandırılmış kayıtlar insanları ya da özel alanları görüntüleyebilir. Lütfen kayıt yaptığınız yerin
+  yasalarına uyun ve başkalarının mahremiyetine saygı gösterin. Ayrıca bkz. <a href="terms-tr.html">Kullanım Koşulları</a>.</p>
+
+  <h2>9. Değişiklikler</h2>
+  <p>Bu politika zaman zaman güncellenebilir. Güncel sürüm, son güncelleme tarihiyle birlikte her zaman bu sayfada yayımlanır.</p>
+
+  <h2>10. İletişim</h2>
+  <p>Sorular ve talepler: <a href="mailto:sehappdev@gmail.com">sehappdev@gmail.com</a></p>
+</main>
+</body>
+</html>

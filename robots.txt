@@ -1,6 +1,7 @@
 # Tarayıcılar robots.txt'yi yalnızca alan adının KÖKÜNDE arar.
-# /dd-budget/robots.txt okunmaz — sitemap bildirimi bu yüzden burada.
+# /dd-budget/robots.txt ve /time2timelapse/robots.txt okunmaz — sitemap bildirimleri bu yüzden burada.
 User-agent: *
 Allow: /
 
 Sitemap: https://sehapps.github.io/dd-budget/sitemap.xml
+Sitemap: https://sehapps.github.io/time2timelapse/sitemap.xml

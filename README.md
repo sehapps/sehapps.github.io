@@ -2,14 +2,18 @@
 
 Sehapps geliştirici kökü: `https://sehapps.github.io/`
 
-Bu repo **iki iş** yapar:
+Bu repo **üç iş** yapar:
 
 | Dosya | Ne işe yarar |
 |---|---|
 | `app-ads.txt` | Reklam envanterini satmaya yetkili satıcıları bildirir. **Asıl sebep bu.** |
 | `index.html` | Kök adrese gelen ziyaretçiye 404 yerine kısa bir geliştirici sayfası gösterir. |
+| `time2timelapse/` | Time2Timelapse tanıtım sitesi, gizlilik politikası ve koşulları → `https://sehapps.github.io/time2timelapse/` (ayrıntı: `time2timelapse/README.md`) |
 
-Ürün sitesi burada **değil** — o ayrı repoda: [`dd-budget`](https://github.com/sehapps/dd-budget) → `https://sehapps.github.io/dd-budget/`
+DD Budget ürün sitesi burada **değil** — o ayrı repoda: [`dd-budget`](https://github.com/sehapps/dd-budget) → `https://sehapps.github.io/dd-budget/`
+
+Time2Timelapse'in kaynak deposu (`sehapps/time2timelapse`) özeldir; sitesi bu yüzden ayrı bir Pages deposu yerine
+bu kullanıcı sitesinin alt klasöründe. O depoda Pages açılmamalı (aynı `/time2timelapse/` yolu çakışır).
 
 ---
 

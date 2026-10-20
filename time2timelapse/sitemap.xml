@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sehapps.github.io/time2timelapse/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sehapps.github.io/time2timelapse/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sehapps.github.io/time2timelapse/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sehapps.github.io/time2timelapse/"/>
+  </url>
+  <url>
+    <loc>https://sehapps.github.io/time2timelapse/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sehapps.github.io/time2timelapse/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sehapps.github.io/time2timelapse/tr/"/>
+  </url>
+  <url>
+    <loc>https://sehapps.github.io/time2timelapse/privacy-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sehapps.github.io/time2timelapse/privacy-en.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sehapps.github.io/time2timelapse/privacy-tr.html"/>
+  </url>
+  <url>
+    <loc>https://sehapps.github.io/time2timelapse/privacy-tr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sehapps.github.io/time2timelapse/privacy-en.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sehapps.github.io/time2timelapse/privacy-tr.html"/>
+  </url>
+  <url><loc>https://sehapps.github.io/time2timelapse/terms-en.html</loc></url>
+  <url><loc>https://sehapps.github.io/time2timelapse/terms-tr.html</loc></url>
+</urlset>

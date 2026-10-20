@@ -1,0 +1,161 @@
+/* Time2Timelapse tanıtım sitesi — uygulamanın tasarım dili: grafit zemin, tek amber vurgu, IBM Plex. */
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f4f4f2;
+  --fg: #141414;
+  --muted: #5c5c58;
+  --accent: #8a5a00;          /* açık zeminde okunabilir amber */
+  --accent-strong: #ffb000;   /* tasarım sisteminin amberi */
+  --accent-fg: #1a1200;
+  --border: #e4e4e0;
+  --dark: #0a0a0a;
+  --dark-fg: #f4f4f2;
+  --dark-muted: #a8a8a4;
+  --record: #ff3b30;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0f;
+    --bg-alt: #161616;
+    --fg: #f4f4f2;
+    --muted: #a8a8a4;
+    --accent: #ffb000;
+    --accent-fg: #1a1200;
+    --border: #262626;
+    --dark: #080808;
+    --dark-muted: #9a9a96;
+  }
+}
+
+* { box-sizing: border-box; }
+
+/* width/height öznitelikleri yerleşim kaymasını önler; height:auto olmadan max-width görselleri ezer. */
+img { max-width: 100%; height: auto; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.narrow { max-width: 760px; }
+a { color: var(--accent); }
+.mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+/* ---------- üst bar ---------- */
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 24px; letter-spacing: -0.01em; color: var(--fg); text-decoration: none; }
+.brand img { width: 42px; height: 42px; border-radius: 10px; }
+.topnav { display: flex; gap: 18px; font-size: 14px; }
+.topnav a { color: var(--dark-muted); text-decoration: none; }
+.topnav a:hover { color: var(--dark-fg); }
+
+/* ---------- hero ---------- */
+.hero { background: var(--dark); color: var(--dark-fg); padding: 56px 0 0; overflow: hidden; }
+.hero .wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: end; }
+.hero-copy { padding-bottom: 64px; }
+.eyebrow {
+  display: inline-block; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--accent-strong);
+  border: 1px solid rgba(255,176,0,.45); border-radius: 999px; padding: 4px 12px; margin-bottom: 20px;
+}
+.hero h1 { font-size: 42px; line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.02em; font-weight: 600; }
+.hero h1 em { font-style: normal; color: var(--accent-strong); }
+.hero p.lede { font-size: 18px; color: var(--dark-muted); margin: 0 0 28px; max-width: 46ch; }
+.hero-shot { display: flex; justify-content: center; padding-bottom: 40px; }
+.hero-shot img {
+  width: 100%; max-width: 300px; display: block;
+  border-radius: 18px; border: 1px solid rgba(255,255,255,.1); box-shadow: 0 18px 45px rgba(0,0,0,.6);
+}
+.cta-note { display: block; margin-top: 12px; font-size: 14px; color: var(--dark-muted); }
+
+/* Zaman şeridi süsü: uygulamadaki saat şeridinin karşılığı. */
+.strip { display: flex; gap: 4px; margin: 0 0 28px; max-width: 420px; }
+.strip i { flex: 1; height: 22px; border-radius: 3px; background: #262626; }
+.strip i.on { background: var(--accent-strong); }
+.strip i.rec { background: rgba(255,59,48,.55); }
+
+/* resmî Google Play rozeti — Google'ın marka kuralları gereği değiştirilmez, en az 40px yükseklik */
+.badge { display: inline-block; line-height: 0; }
+.badge img { height: 56px; width: auto; display: block; }
+.badge:hover { opacity: .88; }
+
+/* ---------- bölümler ---------- */
+section { padding: 64px 0; }
+section.alt { background: var(--bg-alt); }
+h2 { font-size: 28px; letter-spacing: -0.01em; margin: 0 0 8px; font-weight: 600; }
+.section-lede { color: var(--muted); margin: 0 0 36px; font-size: 17px; }
+
+.values { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 24px; }
+.value h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
+.value p { margin: 0; color: var(--muted); font-size: 15px; }
+.value .num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 8px; margin-bottom: 12px;
+  background: var(--accent-strong); color: var(--accent-fg); font-weight: 600; font-size: 14px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* ---------- ekran görüntüleri ---------- */
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 28px; }
+.shot img {
+  width: 100%; max-width: 240px; margin: 0 auto; display: block;
+  border-radius: 14px; border: 1px solid var(--border); background: #0a0a0a;
+}
+.shot figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); text-align: center; }
+
+/* ---------- künye ---------- */
+.kit { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.kit div { border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.kit h3 { margin: 0 0 6px; font-size: 16px; }
+.kit p { margin: 0; font-size: 14px; color: var(--muted); }
+.facts { margin: 0; font-size: 14px; color: var(--muted); }
+.facts dt { font-weight: 600; color: var(--fg); }
+.facts dd { margin: 0 0 10px; }
+.facts dd:last-child { margin-bottom: 0; }
+
+/* ---------- alt bilgi ---------- */
+footer { background: var(--dark); color: var(--dark-muted); padding: 48px 0; font-size: 14px; }
+footer a { color: var(--dark-fg); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.footer-grid { display: flex; flex-wrap: wrap; gap: 28px; justify-content: space-between; align-items: flex-start; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 20px; }
+.copyright { margin-top: 28px; font-size: 13px; }
+
+@media (max-width: 820px) {
+  .hero { padding-top: 40px; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 28px; }
+  .hero-copy { padding-bottom: 0; }
+  .hero h1 { font-size: 31px; }
+  .hero-shot { padding-bottom: 0; }
+  section { padding: 48px 0; }
+  h2 { font-size: 24px; }
+  .topnav { display: none; }
+  .brand { font-size: 21px; }
+  .brand img { width: 36px; height: 36px; }
+  .badge img { height: 50px; }
+}
+
+/* ---------- hukuki sayfalar ---------- */
+.legal { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+.legal h1 { font-size: 28px; margin: 0 0 8px; font-weight: 600; }
+.legal h2 { font-size: 19px; margin-top: 30px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+.legal .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+.legal .summary { background: var(--bg-alt); border-left: 4px solid var(--accent-strong); padding: 12px 16px; border-radius: 6px; margin: 16px 0 24px; }
+.legal .back { font-size: 14px; margin-bottom: 18px; display: block; }
+.legal table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+.legal th, .legal td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.legal th { background: var(--bg-alt); }
+.legal code { background: var(--bg-alt); padding: 1px 6px; border-radius: 4px; font-size: 14px; overflow-wrap: anywhere; }
+/* Dar ekranda uzun sözcükler ve yollar hücre içinde kırılır (yatay kaydırma olmaz). */
+.legal th, .legal td { overflow-wrap: anywhere; hyphens: auto; }
+.legal li { margin: 4px 0; }
+
+/* 404 sayfasındaki tek düğme. */
+.cta { display: inline-block; background: var(--accent-strong); color: var(--accent-fg); font-weight: 600; text-decoration: none; padding: 12px 22px; border-radius: 10px; }
+.cta:hover { opacity: .9; }
